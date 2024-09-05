@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Define o estilo geral da aplicação */
+body {
+  background-color: #121212; /* Cor de fundo escura para o dark mode */
+  color: #e0e0e0; /* Cor do texto */
+  font-family: Arial, sans-serif; /* Fonte padrão */
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #ffffff; /* Cor do título */
+  text-align: center; /* Alinhamento centralizado */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  background-color: #6200ea; /* Cor de fundo dos botões */
+  color: #ffffff; /* Cor do texto dos botões */
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+}
+
+button:hover {
+  background-color: #3700b3; /* Cor de fundo ao passar o mouse */
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #333; /* Borda cinza escura */
+  border-radius: 4px;
+  background-color: #424242; /* Cor de fundo do campo de entrada */
+  color: #ffffff; /* Cor do texto */
+  width: 70%; /* Ajusta a largura para combinar com o padding */
+  box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+.id {
+  font-weight: bold; /* Destaque para o código de identificação */
+}
+
+.link {
+  color: #bb86fc; /* Cor dos links */
+  margin-top: 20px;
+}
+
+.access-count {
+  color: #03dac6; /* Cor da contagem de acessos */
+}
+
+.delete {
+  background-color: #b00020; /* Cor de fundo do botão de exclusão */
+  color: #ffffff; /* Cor do texto */
+}
+
+.delete:hover {
+  background-color: #b00000; /* Cor de fundo ao passar o mouse */
+}
+
+.modal-content {
+  text-align: center; /* Alinhamento centralizado do conteúdo do modal */
+}
+
+.modal-content img {
+  max-width: 100%; /* Garante que a imagem do QR code não ultrapasse a largura do modal */
+}
+
+button {
+  margin: 10px; /* Margem para botões dentro dos modais */
+}
+/* Estilo específico para o campo de código de identificação */
+.code-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  background-color: #333; /* Cor de fundo escura para o campo de código */
+  border-radius: 4px; /* Bordas arredondadas */
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.code-label {
+  font-weight: bold;
+  color: #ffffff; /* Cor do texto do rótulo */
+  margin-right: 10px; /* Espaço entre o rótulo e o código */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.code-value {
+  background-color: #424242; /* Cor de fundo do código */
+  color: #ffffff; /* Cor do texto do código */
+  padding: 5px 10px;
+  border-radius: 4px; /* Bordas arredondadas */
+  font-family: monospace; /* Fonte monoespaçada para o código */
+  word-break: break-all; /* Quebra o código se for muito longo */
+  overflow-wrap: break-word; /* Garante que o código se ajuste ao espaço disponível */
+}
+
+.code-container:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse */
+}
+/* Estilo para o link do QR code */
+.qrcode-link-container {
+  margin-left: 10px;
+}
+
+.qrcode-link {
+  color: #00aaff; /* Cor azul clara para o link */
+  text-decoration: none; /* Remove o sublinhado do link */
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+
+.access-count {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff; /* Cor cinza para o texto */
 }
